@@ -1,0 +1,106 @@
+/* 8 Ball Shake */
+.shake{
+    /* Start the shake animation and make the animation last for 1 second */
+    animation: shake 1s infinite;
+}
+
+  @keyframes shake {
+    0% { transform: translate(4px, 4px) rotate(0deg); }
+    10% { transform: translate(-4px, -4px) rotate(-1deg); }
+    20% { transform: translate(-7px, 0px) rotate(1deg); }
+    30% { transform: translate(7px, 4px) rotate(0deg); }
+    40% { transform: translate(4px, -4px) rotate(1deg); }
+    50% { transform: translate(-4px, 4px) rotate(-1deg); }
+    60% { transform: translate(-7px, 4px) rotate(0deg); }
+    70% { transform: translate(7px, 4px) rotate(-1deg); }
+    80% { transform: translate(-4px, -4px) rotate(1deg); }
+    90% { transform: translate(4px, 4px) rotate(0deg); }
+    100% { transform: translate(4px, -4px) rotate(-1deg); }
+  }
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+   background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cf80098c-96f1-442b-a173-ffdb305b390e/db8da4d-94a99add-45c7-42ea-971a-f48b2460a5ac.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NmODAwOThjLTk2ZjEtNDQyYi1hMTczLWZmZGIzMDViMzkwZVwvZGI4ZGE0ZC05NGE5OWFkZC00NWM3LTQyZWEtOTcxYS1mNDhiMjQ2MGE1YWMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.BlssDcJdMh1Dskmm_wQ3HCEkMzEth9sp_3wrNExXUIk");
+
+}
+/* Creating the Ball */
+#ball{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(54, 54, 54);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  height: 35vw;
+  width: 35vw;
+  top: 0;
+  right: 0;
+  -webkit-box-shadow:0px 0px 25px 0px rgba(208,219,230,0.85);
+  -moz-box-shadow: 0px 0px 25px 0px rgba(208,219,230,0.85);
+  box-shadow: 0px 0px 25px 0px rgba(208,219,230,0.85);
+  mix-blend-mode: lighten;
+  content: "";
+
+}
+.inputfield{
+    display:flex;
+    justify-content: center;
+
+}
+input{
+    position: absolute;
+    top: 65vh;
+    padding: 15px 50px 15px 15px;
+    font-size: 15px;
+    border-radius: 30px;
+    text-align: left;
+
+}
+/* Enter Button */
+button{
+    margin:auto;
+    position:absolute;
+    top: 75vh;
+    padding: 10px 80px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: rgb(128, 88, 56);
+    color: white;
+
+}
+button:hover{
+    background-color: rgb(153, 116, 47);
+}
+#response{
+    width:70px;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 120px;    
+}
+
+.whitesurface{
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
