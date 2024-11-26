@@ -1,3 +1,7 @@
+
+
+
+
 /* 8 Ball Shake */
 .shake{
     /* Start the shake animation and make the animation last for 1 second */
@@ -88,11 +92,11 @@ button:hover{
     background-color: rgb(153, 116, 47);
 }
 #response{
-    width:70px;
+    width:110 px;
     color: rgb(0, 0, 0);
-    border-radius: 50%;
+    border-radius: 100%;
     text-align: center;
-    font-size: 120px;    
+    font-size: 200px;    
 }
 
 .whitesurface{

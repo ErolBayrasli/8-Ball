@@ -28,11 +28,6 @@ const points = [
     "Yes",
     "Outlook good",
     "Signs point to yes",
-   "Reply hazy try again",
-"Better not tell you now",
-"Ask again later",
-"Cannot predict now",
-"Concentrate and ask again",
 "Don’t count on it",
 "Outlook not so good",
 "My sources say no",
@@ -45,6 +40,7 @@ function myFunction() {
   points.sort(function(a, b){return 0.5 - Math.random()});
   document.getElementById("response").innerHTML = points[0];
   document.getElementById("response").style.fontSize="18px";
+  document.getElementById("ball").classList.remove("shake");
   setTimeout(timeup, 4000);
 
 function timeup(){
